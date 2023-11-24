@@ -42,7 +42,7 @@ appBar() {
     backgroundColor: Colors.white,
     leading: Padding(
       padding: const EdgeInsets.all(10),
-      child: Image.network(LOGO_00),
+      child: Image.network(LOGO_00,),
     ),
     titleSpacing: 0,
     title: SizedBox(
@@ -100,28 +100,82 @@ agentCard(context) {
             ),
           ),
         ),
-        Container(
-          height: 300,
-          width: 300,
-          child: Card(
-            color: Colors.white,
-            //shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        InkWell(
+          onTap: () => Navigator.of(context).pushReplacement(MaterialPageRoute(
+            builder: (BuildContext context) => AgentPage(),
+          )),
+          child: Container(
+            height: 300,
+            width: 300,
+            child: Card(
+              color: Colors.white,
+              //shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+            ),
           ),
         ),
-        Container(
-          height: 300,
-          width: 300,
-          child: Card(
-            color: Colors.white,
-            //shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        InkWell(
+          onTap: () => Navigator.of(context).pushReplacement(MaterialPageRoute(
+            builder: (BuildContext context) => AgentPage(),
+          )),
+          child: Container(
+            height: 300,
+            width: 300,
+            child: Card(
+              color: Colors.white,
+              //shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+            ),
           ),
         ),
-        Container(
-          height: 300,
-          width: 300,
-          child: Card(
-            color: Colors.white,
-            //shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        InkWell(
+          onTap: () => Navigator.of(context).pushReplacement(MaterialPageRoute(
+            builder: (BuildContext context) => AgentPage(),
+          )),
+          child: Container(
+            height: 300,
+            width: 300,
+            child: Card(
+              color: Colors.white,
+              //shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+            ),
+          ),
+        ),
+        InkWell(
+          onTap: () => Navigator.of(context).pushReplacement(MaterialPageRoute(
+            builder: (BuildContext context) => AgentPage(),
+          )),
+          child: Container(
+            height: 300,
+            width: 300,
+            child: Card(
+              color: Colors.white,
+              //shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+            ),
+          ),
+        ),
+        InkWell(
+          onTap: () => Navigator.of(context).pushReplacement(MaterialPageRoute(
+            builder: (BuildContext context) => AgentPage(),
+          )),
+          child: Container(
+            height: 300,
+            width: 300,
+            child: Card(
+              color: Colors.white,
+              //shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+            ),
+          ),
+        ),
+        InkWell(
+          onTap: () => Navigator.of(context).pushReplacement(MaterialPageRoute(
+            builder: (BuildContext context) => AgentPage(),
+          )),
+          child: Container(
+            height: 300,
+            width: 300,
+            child: Card(
+              color: Colors.white,
+              //shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+            ),
           ),
         ),
         SizedBox(
@@ -133,7 +187,8 @@ agentCard(context) {
 }
 
 mapCard(context) {
-  return Column(
+  return Center(
+      child: Column(
     mainAxisAlignment: MainAxisAlignment.start,
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
@@ -172,5 +227,5 @@ mapCard(context) {
         ],
       ),
     ],
-  );
+  ));
 }
