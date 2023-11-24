@@ -48,7 +48,7 @@ appBar() {
     title: SizedBox(
       width: 150,
       height: 150,
-      child: Image.network(LOGO_01),
+      child: Image.network(LOGO_01,),
     ),
 
     elevation: 0, //-> aumenta a sombra debaixo do menu
